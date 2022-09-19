@@ -2,6 +2,22 @@
   text-align: center;
 }
 
+:root{
+  --color-primary: #000dff;
+  --color-primary-dark: #00044a;
+  --color-secondary: #27cb8b;
+  --color-black: #000;
+  --color-black-light: #333;
+  --color-white: #fff;
+  --color-white-light: #ccc;
+  /* color-scheme */
+  --color-primary-light: #0060fa;
+  --color-primary-lighter: #008fff;
+  --color-lightest: #6ebaff;
+  --color-secondar-1: #c85100;
+  --color-secondary-2: #ff8400;
+}
+
 .App-logo {
   height: 40vmin;
   pointer-events: none;
