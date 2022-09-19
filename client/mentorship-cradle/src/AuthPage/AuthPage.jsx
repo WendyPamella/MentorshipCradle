@@ -24,6 +24,7 @@ const AuthPage = () => {
 
           <div className="forms">
             <form action="get" className="login-form">
+                <h2 className="auth-form-title">Log into your account.</h2>
                 {/* username */}
               <div className="form-input-wrapper">
                 <label for="name" className="form-input-icon">
@@ -40,6 +41,7 @@ const AuthPage = () => {
               </div>
               {/* submit button */}
               <a href="/" className="auth-submit-btn">sign in</a>
+              <a href="/" className="forgot-password">forgot your password ?</a>
             </form>
             <form action="post" className="signup-form">
               {/* <input type="text" name="name" id="" className="form--input" />

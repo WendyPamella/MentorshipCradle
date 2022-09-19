@@ -66,8 +66,7 @@ body {
 }
 
 .auth-page-container__image--img{
-  --size: 25rem;
-  height: var(--size);
+  width: 90%;
 }
 
 .forms__container--header{
@@ -102,6 +101,28 @@ body {
 .forms__container{
   width: 50%;
   background-color: #fff;
+  border-radius: 5px;
+  overflow: hidden;
+}
+
+.auth-form-title{
+  font-size: 1.7rem;
+  width: max-content;
+  text-transform: capitalize;
+  font-weight: 600;
+  margin: 2rem auto;
+  position: relative;
+}
+
+.auth-form-title::after{
+  content: "";
+  width: 50%;
+  height: 3px;
+  position: absolute;
+  bottom: -1rem;
+  left: 0;
+  transform: translateX(50%);
+  background-color: var(--color-secondary);
 }
 
 .form-input-wrapper{
@@ -160,5 +181,13 @@ body {
   text-transform: capitalize;
   letter-spacing: 2px;
   border-radius: 100px;
+}
+
+.forgot-password{
+  display: block;
+  text-align: center;
+  color: var(--color-secondary);
+  margin-bottom: 1.5rem;
+  text-transform: capitalize;
 }
 /* end of authentication page stylings */
