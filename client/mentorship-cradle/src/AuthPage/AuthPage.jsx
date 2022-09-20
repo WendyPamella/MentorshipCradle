@@ -1,6 +1,7 @@
 import React, { useRef } from "react";
 import careerImg from "../Assets/Images/career.svg";
 import { User, Key } from "../Icons/Icons";
+import { Link } from "react-router-dom";
 // sign-in-up-form
 const AuthPage = () => {
   const formsRef = useRef(null);
@@ -82,16 +83,20 @@ const AuthPage = () => {
                 />
               </div>
               {/* submit button */}
-              <a href="/" className="auth-submit-btn">
+              <Link to="/main-page" className="auth-submit-btn">
                 sign in
-              </a>
+              </Link>
               <a href="/" className="forgot-password">
                 forgot your password ?
               </a>
             </form>
 
             {/* sign up form */}
-            <form action="post" className="signup-form" data-sib="signup">
+            <form
+              action="post"
+              className="signup-form form--sleeping"
+              data-sib="signup"
+            >
               <div className="form__flex-box">
                 <div className="form-col-input-wrapper">
                   <label htmlFor="firstname" className="form-col-lbl">
@@ -160,9 +165,9 @@ const AuthPage = () => {
                   placeholder="name of your organisation"
                 />
               </div>
-              <a href="/" className="sign-up-btn">
+              <Link to="/main-page" className="sign-up-btn">
                 sign me up
-              </a>
+              </Link>
             </form>
           </div>
         </div>
