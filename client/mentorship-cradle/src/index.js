@@ -4,6 +4,7 @@ import App from './App';
 import reportWebVitals from './reportWebVitals';
 
 import Homepage from './Pages/Homepage/Hompage';
+import MentorSpotlight from './Pages/MentorSpotlight/MentorSpotlight';
 
 import {
   createBrowserRouter,
@@ -19,6 +20,10 @@ const router = createBrowserRouter([
   {
     path: '/main-page',
     element: <Homepage />
+  },
+  {
+    path: '/mentor-spotlight',
+    element: <MentorSpotlight />
   }
 ]);
 

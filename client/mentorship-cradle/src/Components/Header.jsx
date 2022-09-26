@@ -38,32 +38,32 @@ const Header = () => {
         <nav className="header__nav">
           <ol className="header__nav--list">
             <li className="header__nav--item">
-              <HeaderLink linkText="home" linkDirection="/" icon={<Home />} />
+              <HeaderLink linkText="home" linkDirection="/main-page" icon={<Home />} />
             </li>
             <li className="header__nav--item">
               <HeaderLink
-                linkText="companies"
+                linkText="Events"
                 linkDirection="/"
                 icon={<Company />}
               />
             </li>
             <li className="header__nav--item">
               <HeaderLink
-                linkText="projects"
+                linkText="course work"
                 linkDirection="/"
                 icon={<Rocket />}
               />
             </li>
             <li className="header__nav--item">
               <HeaderLink
-                linkText="profiles"
-                linkDirection="/"
+                linkText="mentor spotlight"
+                linkDirection="/mentor-spotlight"
                 icon={<UserCircle />}
               />
             </li>
             <li className="header__nav--item">
               <HeaderLink
-                linkText="challenges"
+                linkText="mentee stories"
                 linkDirection="/"
                 icon={<Badge />}
               />
