@@ -1,4 +1,4 @@
-import React,  { useRef }  from 'react';
+import React from 'react';
 import { Link } from "react-router-dom";
 
 import careerImg from "../../assets/Images/career.svg";

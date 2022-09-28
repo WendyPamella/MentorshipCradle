@@ -1,8 +1,8 @@
-import React,  { useRef }  from 'react';
+import React from 'react';
 import { Link } from "react-router-dom";
 
 import careerImg from "../../assets/Images/career.svg";
-import { User, Key } from "../../Icons/Icons";
+//import { User, Key } from "../../Icons/Icons";
 import '../../App.css';
 
 export default function MenteeSignup() {
