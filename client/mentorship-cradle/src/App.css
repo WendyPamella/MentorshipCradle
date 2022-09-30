@@ -598,7 +598,7 @@ body {
   color: #fff;
 }
 .container{
-  width: 800px;
+  width: 80vw;
   height: 400px;
   position: absolute;
   top:50%;
