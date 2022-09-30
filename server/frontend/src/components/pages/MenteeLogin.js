@@ -1,11 +1,24 @@
-import React,  { useRef }  from 'react';
+import React, { useState } from 'react';
 import { Link } from "react-router-dom";
 
+import axios from "axios";
 import careerImg from "../../assets/Images/career.svg";
 import { User, Key } from "../../Icons/Icons";
 import '../../App.css';
 
-export default function MenteeSignup() {
+export default function MenteeSignin() {
+  const [password, setPassword]= useState("")
+    const [email, setEmail]= useState("")
+
+    const handleLogin = async (e)=>{
+      e.preventDefault();
+      try{
+        const res = await axios.post("/auths/menteesignin", {email,password})
+        res.status && window.location.replace("/mentee-dashboard")
+      }catch(err){
+        alert(err.response.data.message)
+      }
+    };
   return (
   <div className="authentication-page">
   <div className="auth-page-container">
@@ -39,11 +52,11 @@ export default function MenteeSignup() {
                   <User />
                 </label>
                 <input
-                  type="text"
+                  type="email"
                   name=""
-                  id="name"
                   className="auth-form-text-input"
                   placeholder="Example@gmail.com"
+                  onChange={e=>setEmail(e.target.value)}
                 />
               </div>
               {/* password */}
@@ -53,16 +66,13 @@ export default function MenteeSignup() {
                 </label>
                 <input
                   type="password"
-                  name=""
-                  id="password"
                   className="auth-form-text-input"
                   placeholder="Password"
+                  onChange={e=>setPassword(e.target.value)}
                 />
-              </div>
+                </div>
               {/* submit button */}
-              <Link to="/main-page" className="auth-submit-btn">
-                sign in
-              </Link>
+              <button className="auth-submit-btn" onClick={handleLogin}>Sign IN</button>
               <a href="/" className="forgot-password">
                 forgot your password ?
               </a>

@@ -8,12 +8,12 @@ function Footer() {
     <div className='footer-container'>
       <section className='footer-subscription'>
         <p className='footer-subscription-heading'>
-          Join the Mentorship newsletter to receive our best blogs and mentor spotlights
+          Join the Mentorship to hear from  our best rated mentors and mente stories
         </p>
-        <p className='footer-subscription-text'>
+        {/* <p className='footer-subscription-text'>
           You can unsubscribe at any time.
-        </p>
-        <div className='input-areas'>
+        </p> */}
+        {/* <div className='input-areas'>
           <form>
             <input
               className='footer-input'
@@ -22,8 +22,8 @@ function Footer() {
               placeholder='Your Email'
             />
             <Button buttonStyle='btn--outline'>Subscribe</Button>
-          </form>
-        </div>
+          </form> */}
+        {/* </div> */}
       </section>
       <div class='footer-links'>
         <div className='footer-link-wrapper'>

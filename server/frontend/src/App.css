@@ -104,6 +104,10 @@ body {
   margin: inset auto;
 }
 
+.error{
+  background: red;
+}
+
 .auth-page-container__image {
   width: 48%;
   margin-right: auto;
@@ -259,7 +263,9 @@ html {
   letter-spacing: 2px;
   border-radius: 100px;
 }
-
+.auth-submit-btn:hover{
+  cursor: pointer;
+}
 .forgot-password {
   display: block;
   text-align: center;
@@ -471,6 +477,21 @@ html {
   display: block;
   object-fit: cover;
   border-radius: 50%;
+}
+
+.bb{
+  background: rgb(159, 158, 158);
+  padding: 15px 30px;
+  border-radius: 10px;
+  margin: 20px;
+}
+.bb:hover{
+ background: #8489e8;
+}
+.cc:hover{
+  color: rgb(27, 26, 26);
+  background: rgb(252, 136, 136);
+  text-shadow: #000dff;
 }
 
 .profile-link__name {

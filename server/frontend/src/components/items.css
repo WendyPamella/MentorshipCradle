@@ -1,0 +1,42 @@
+.itemsContainer {
+    width: 200px;
+    height: 500px;
+    border-radius: 10px;
+    margin-top: 4px;
+    background-color: rgb(13, 4, 37);
+    -webkit-box-shadow: 0px 0px 16x -8px rgba (0,0,0,0.68);
+    box-shadow: 0px 0px 16x -8px rgba (0,0,0,0.68);
+}
+.span{
+    color: aliceblue;
+}
+
+.itemsWrapper {
+    padding: 20px;
+}
+.sidebarList{
+    padding: 0;
+    margin: 0;
+    list-style: none;
+}
+
+.sidebarListItem {
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+    color: rgb(83, 18, 18);
+}
+.links{
+    text-decoration: none;
+    color: aliceblue;
+}
+
+
+
+
+.sidebarIcon {
+    margin-right: 15px;
+    color: white;
+}
+
+

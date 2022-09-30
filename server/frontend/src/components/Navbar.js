@@ -31,7 +31,7 @@ function Navbar() {
         <div className='navbar-container'>
           <Link to='/' className='navbar-logo' onClick={closeMobileMenu}>
             MC
-            <i class='fab fa-typo3' />
+            <i className='fab fa-typo' />
           </Link>
           <div className='menu-icon' onClick={handleClick}>
             <i className={click ? 'fas fa-times' : 'fas fa-bars'} />
@@ -73,14 +73,7 @@ function Navbar() {
               >
                 Mentee Stories
               </Link>
-              <Link
-                to='/blogs'
-                className='nav-links'
-                onClick={closeMobileMenu}
-              >
-                Blogs
-              </Link>
-            </li>
+              </li>
 
             <li>
               <Link
@@ -92,7 +85,7 @@ function Navbar() {
               </Link>
             </li>
           </ul>
-          {button && <Button buttonStyle='btn--outline'>LOGIN</Button>}
+          
         </div>
       </nav>
     </>
