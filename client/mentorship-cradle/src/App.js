@@ -1,10 +1,11 @@
 // import {IconExpand} from './Icons/Icons';
-import './App.css';
+import "./App.css";
+import AuthPage from "./AuthPage/AuthPage";
 
 function App() {
   return (
     <div className="App">
-      <h1>Mentorhip cradle</h1>
+      <AuthPage />
     </div>
   );
 }

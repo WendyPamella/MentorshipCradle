@@ -3,10 +3,35 @@ import ReactDOM from 'react-dom/client';
 import App from './App';
 import reportWebVitals from './reportWebVitals';
 
+import Homepage from './Pages/Homepage/Hompage';
+import MentorSpotlight from './Pages/MentorSpotlight/MentorSpotlight';
+
+import {
+  createBrowserRouter,
+  RouterProvider,
+  // Route,
+} from "react-router-dom";
+
+const router = createBrowserRouter([
+  {
+    path: "/",
+    element: <App />
+  },
+  {
+    path: '/main-page',
+    element: <Homepage />
+  },
+  {
+    path: '/mentor-spotlight',
+    element: <MentorSpotlight />
+  }
+]);
+
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <React.StrictMode>
-    <App />
+    {/* <App /> */}
+    <RouterProvider router={router} />
   </React.StrictMode>
 );
 
